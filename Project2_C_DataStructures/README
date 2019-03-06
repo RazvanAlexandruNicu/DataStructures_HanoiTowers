@@ -1,0 +1,28 @@
+// Nicu Razvan-Alexandru 313CB
+
+	Realizarea temei a constat in 3 etape:
+	1) Etapa 1 presupune citirea din fisierul de input si parsarea comenzilor
+	primite din fisier. 
+	2) Etapa 2 presupune implementarea comenzilor:
+		- add - creeaza un disc cu proprietatie descrise, aloca in memorie
+		spatiu pentru acesta si insereaza corespunzator in stiva / tijaA 
+		din sistemul corespunzator. ( daca nu exista astfel de sistem, acesta
+		este creat).
+		- show - afisaza starea sistemului hanoi din momentul apelarii functiei.
+		Functia afiseaza conform 'scheletului' primit, discurile in ordinea descre-
+		scatoare dimensiunilor de pe fiecare tija/stiva din sistemul specificat
+		- creareCoada - functie ce initializeaza coada din sistemul dat ca parametru
+		in momentul apelarii uneia din functiile play/show_moves. Astfel, voi intializa
+		coada doar in sistemul in care va fi nevoie de o astfel de operatie.
+		- hanoi - functie ce genereaza mutarile din sistemul hanoi si le introduce in coa-
+		da anterior creata.
+		- show_moves - elimina din coada mutarilor n mutari si le afiseaza, dupa care
+		reface coada intiala. (eliminarea se face cu ajutorul intrQ extrQ intr-o coada auxi-
+		liara)
+		- play - elimina din coada de mutari n mutari si modifica sistemul conform celor n
+		mutari.
+		Am evitat iterarea prin cozi si stive si am folosit functiile definite de mine Pop, Push
+		extrQ, intrQ pentru extragere/inserare in alte stive/cozi auxiliare
+	3) Etapa 3 presupune eliberarea memoriei folosite. Eliberarea listei de sisteme, precum si a stivelor,
+		cozilor si pointerilor alocati pe tot parcursul rezolvarii problemei.
+
